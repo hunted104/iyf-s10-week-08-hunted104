@@ -8,5 +8,8 @@ function Card({ children, title }) {
         </div>
     );
 }
+<Card title="My Tasks">
+  <TodoList />
+</Card>
 
 export default Card;
