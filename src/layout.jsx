@@ -1,9 +1,14 @@
-function Header() {
+import Header from "./Header";
+import Footer from "./Footer";
+
+function Layout({ children }) {
   return (
-    <header>
-      <h2>CommunityHub</h2>
-    </header>
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
   );
 }
 
-export default Header;
+export default Layout;
