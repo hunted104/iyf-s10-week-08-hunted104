@@ -5,7 +5,8 @@ function Toggle() {
 
   return (
     <div>
-      <p>The toggle is {isOn ? "ON" : "OFF"}</p>
+      <p>{isOn ? "ON" : "OFF"}</p>
+
       <button onClick={() => setIsOn(!isOn)}>
         Toggle
       </button>
