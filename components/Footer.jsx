@@ -1,9 +1,9 @@
 function Footer() {
-    return (
-        <footer className="footer">
-            <p>&copy; 2026 CommunityHub. All rights reserved.</p>
-        </footer>
-    );
+  return (
+    <footer>
+      <p>© 2026 CommunityHub</p>
+    </footer>
+  );
 }
 
 export default Footer;
