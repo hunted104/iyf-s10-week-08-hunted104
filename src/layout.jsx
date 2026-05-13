@@ -1,16 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
-
-function Layout({ children }) {
+function Header() {
   return (
-    <div className="layout">
-      <Header />
-      <main className="main-content">
-        {children}
-      </main>
-      <Footer />
-    </div>
+    <header>
+      <h2>CommunityHub</h2>
+    </header>
   );
 }
 
-export default Layout;
+export default Header;
