@@ -1,16 +1,13 @@
-function Button({ 
-    text = "Click me",
-    variant = "primary",
-    size = "medium",
-    disabled = false 
+function Button({
+  text = "Click Me",
+  variant = "primary",
+  disabled = false
 }) {
-    return (
-        <button 
-            className={`btn btn-${variant} btn-${size}`}
-            disabled={disabled}
-        >
-            {text}
-        </button>
-    );
+  return (
+    <button className={variant} disabled={disabled}>
+      {text}
+    </button>
+  );
 }
-export default Button
+
+export default Button;
