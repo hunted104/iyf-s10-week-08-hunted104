@@ -1,32 +1,28 @@
-import PostCard from './PostCard';
+import PostCard from "./PostCard";
 
 function PostList() {
   const posts = [
     {
       id: 1,
-      title: "Getting Started with React",
-      excerpt: "Learn the basics of React...",
-      author: "Ian",
-      date: "Jan 15, 2026"
+      title: "React Basics",
+      author: "Ian"
     },
     {
       id: 2,
-      title: "JavaScript Best Practices",
-      excerpt: "Write cleaner code...",
-      author: "Jane Smith",
-      date: "Jan 10, 2026"
+      title: "JavaScript Tips",
+      author: "Student"
     }
   ];
 
   return (
-    <div className="post-list">
-      {posts.map(post => (
+    <div>
+      <h2>Posts</h2>
+
+      {posts.map((post) => (
         <PostCard
           key={post.id}
           title={post.title}
-          excerpt={post.excerpt}
           author={post.author}
-          date={post.date}
         />
       ))}
     </div>
